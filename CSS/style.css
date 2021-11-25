@@ -30,7 +30,7 @@ a{
     text-decoration: none;
 }
 img{
-    max-width: 100%;
+    width: 100%;
 }
 .main-container{
     max-width: 120rem;
@@ -40,6 +40,7 @@ h1, h2, h3{
     text-align: center;
     color: var(--secundario);
     font-family: var(--fuentePrincipal);
+    margin: 2rem;
 }
 h1{
     font-size: 4rem;
@@ -177,4 +178,37 @@ h3{
     .benefits__container{
         grid-template-columns: repeat(4, auto);
     }
+}
+/* Producto */
+.camisa{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    margin: 1rem;
+    gap: 1.6rem;
+}
+@media (min-width:768px){
+    .camisa{
+        grid-template-columns: repeat(2, auto);
+        margin:0 10rem;
+    }
+}
+
+.camisa__form__talla,
+.camisa__form__cant{
+    background-color: var(--primario);
+    border: 5px solid var(--primarioObscuro);
+    color: var(--blanco);
+    width: 14rem;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+.camisa__form__cant{
+    margin-left: 1.5rem;
+}
+.camisa__contenido__button{
+    font-family: var(--fuentePrincipal);
+    border: none;
+    background-color: var(--secundario);
+    width: 30rem;
+    padding: 15px ;
 }
